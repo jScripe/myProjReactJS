@@ -1,0 +1,49 @@
+.dropdown-container {
+    position: relative;
+    display: flex;
+    margin-right: 60px;
+    width: 100px;
+
+    &__label {
+        cursor: pointer;
+    }
+
+    &__list {
+        display: none;
+        position: absolute;
+        top: 100%;
+    }
+
+    &:hover {
+        & .dropdown-container__list {
+            display: block;
+        }        
+    }
+}
+
+.dropdown-list {
+    padding-top: 15px;
+
+    &__item {
+        padding: 3px 10px;
+        margin-bottom: 2px;
+        border: 1px solid #373737;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &:hover {
+            font-weight: 600;
+            box-shadow: 0 0 10px 1px #373737;
+        }
+
+        &:active {
+            font-weight: 400;
+            box-shadow: none;
+        }
+
+        & a {
+            display: inline-block;
+            width: 100%;
+        }
+    }
+}

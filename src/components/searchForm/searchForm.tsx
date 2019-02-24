@@ -8,10 +8,10 @@ interface Props {
 
 function SearchForm(props: Props): JSX.Element {
     return (
-        <form action="" method="get" className="search-form">
-            <input type="text" placeholder="Искать на сайте..." />
-            <button type="submit"><i className="fa fa-search"></i></button>
-        </form>
+        <div className="search-form">
+            <input type="text" placeholder="Искать на сайте..." className="search-form__input"/>
+            <i className="fa fa-search search-form__icon"></i>
+        </div>
     )
 }
 

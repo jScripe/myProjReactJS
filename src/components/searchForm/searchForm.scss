@@ -1,0 +1,29 @@
+.search-form {
+    outline: none;
+    position: relative;
+
+    &__input {
+        border: 1px solid #373737;
+        border-radius: 15px;
+        padding: 5px 20px;
+        width: 230px;
+    }
+
+    &__icon {
+        border: none;
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 14px;
+
+        &:hover {
+            font-size: 15px;
+        }
+
+        &:active {
+            font-size: 14px;
+            color: #000;
+        }
+    }
+}

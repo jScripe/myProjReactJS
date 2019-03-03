@@ -25,17 +25,21 @@
         height: 100%;
         backface-visibility: hidden;
         border: 1px solid #000;
+
+        img {
+            width: 100%;
+        }
     }
 
     &__front {
         z-index: 2;
         transform: rotateY(0deg);
-        background-color: red;
+        border: 1px solid #000;
     }
     
     &__back {
         transform: rotateY(-180deg);
-        background-color: blue;
+        border: 1px solid #000;
     }
 }
 
